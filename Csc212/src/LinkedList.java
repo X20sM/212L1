@@ -1,5 +1,5 @@
 
-public class LinkedList<T> {
+public class LinkedList<T>implements List<T> {
 private Node <T> head;
 private Node <T> current;
 
@@ -15,10 +15,10 @@ public boolean last() {
 public boolean full() {
 	return false;
 }
-public void findfirst() {
+public void findFirst() {
 	current=head;
 }
-public void findnext() {
+public void findNext() {
 	current=current.next;
 }
 public T retrieve() {
